@@ -1,0 +1,53 @@
+.optionWrapper {
+    width: $mainWidth;
+    margin: 0 auto;
+    min-height: 500px;
+}
+
+.optionA, .optionB {
+    width: 478.5px;
+    padding: 10px;
+    background: #eee;
+    margin: 0px 0;
+        h2 {
+            text-align: center;
+            color: #999;
+            transform:scale(1.5,1);
+            // text-shadow: 0px 0px 1px #000;
+            margin: 15px 0 5px 0;
+        }
+        img {
+            border: 1px ridge $optionBorder;
+        }
+}
+
+.optionA:hover, .optionB:hover {
+    background: #eaeaea;
+}
+
+.optionA:active, .optionB:active {
+    background: #ddd;
+}
+
+.optionA {
+    float: left;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid $optionBorder;
+    box-shadow: inset 10px 10px 10px -7px $optionGradientColor, inset 0px -10px 10px -7px $optionGradientColor;
+}
+
+.optionA:hover {
+    box-shadow: inset 10px 10px 10px -7px $optionGradientColorHover, inset 0px -10px 10px -7px $optionGradientColorHover;
+}
+
+.optionB {
+    float: right;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid $optionBorder;
+    border-left: 0;
+    box-shadow: inset -10px 10px 10px -7px $optionGradientColor, inset 0px -10px 10px -7px $optionGradientColor;
+}
+
+.optionB:hover {
+    box-shadow: inset -10px 10px 10px -7px $optionGradientColorHover, inset 0px -10px 10px -7px $optionGradientColorHover;
+}
