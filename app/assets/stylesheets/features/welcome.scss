@@ -3,13 +3,13 @@
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   height: 0;
-  margin: 0 auto;
+  margin: 6px auto 0 auto;
   width: 0;
 }
 
 .options {
   margin: 0 auto;
-  min-height: 500px;
+  min-height: 518px;
   width: $main-width;
 }
 
@@ -17,7 +17,7 @@
   background: #eee;
   margin: 0px 0;
   padding: 10px;
-  width: 478.5px;
+  width: 478px;
 
   img {
     border: 1px ridge $option-border-color;
@@ -43,5 +43,6 @@
     @include cat-option-border($direction);
     @include cat-option-shadow($direction);
     border-left: 0;
+    padding-left: 11px;
   }
 }
