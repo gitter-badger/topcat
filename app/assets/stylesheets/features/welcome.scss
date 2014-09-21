@@ -1,3 +1,5 @@
+@import 'temp_grid';
+
 .arrow-up {
   border-bottom: 15px solid #999;
   border-left: 15px solid transparent;
@@ -45,4 +47,30 @@
     border-left: 0;
     padding-left: 11px;
   }
+}
+
+.container_5 {
+    img {
+      border: 1px solid #999;
+      margin-top: 20px;
+      width: 178px;
+    }
+}
+
+.top-selector {
+  width: $main-width;
+  margin: 60px auto 0 auto;
+  border-bottom: 2px solid #999;
+    a {
+      display: inline-block;
+      background: #ccc;
+      color: white;
+      text-decoration: none;
+      padding: 7px 30px 5px 30px;
+      font-family: arial;
+    }
+    a:first-child {
+      background: #999;
+      margin-left: 50px;
+    }
 }
