@@ -1,4 +1,3 @@
-5.times do
-  Cat.create url: 'placekitten.com/g/300/300'
-  Cat.create url: 'placekitten.com/g/400/400'
-end
+Cat.create url: 'placekitten.com/g/250/250'
+Cat.create url: 'placekitten.com/g/350/350'
+Cat.create url: 'placekitten.com/g/450/450'

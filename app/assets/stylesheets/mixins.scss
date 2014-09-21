@@ -1,0 +1,24 @@
+@mixin cat-option-border($side) {
+  @if $side == left {
+    border-radius: 10px 0 0 10px;
+  } @else if $side == right {
+    border-radius: 0 10px 10px 0;
+  }
+
+  border: 1px solid $option-border-color;
+}
+
+@mixin cat-option-shadow($side) {
+  $mod: 0; @if $side == left { $mod: 1 } @else if $side == right { $mod: -1 }
+
+  $upper: inset $mod*10px -10px 10px -7px;
+  $lower: inset 0px -10px 10px -7px ;
+
+  $color: $option-gradient-color;
+  box-shadow: $upper $color, $lower $color;
+
+  &:hover {
+    $color: $option-gradient-color-hover;
+    box-shadow: $upper $color, $lower $color;
+  }
+}

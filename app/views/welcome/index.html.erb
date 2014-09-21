@@ -1,14 +1,8 @@
-<div class="optionWrapper">
-	<a href="#" accesskey="a">
-		<div class="optionA">
-			<img src="http://placekitten.com/476/500">
-			<h2>&#x25B2;</h2>
-		</div>
-	</a>
-	<a href="#" accesskey="b">
-		<div class="optionB">
-			<img src="http://placekitten.com/476/500">
-			<h2>&#x25B2;</h2>
-		</div>
-	</a>
+<div class="options">
+  <% @cats.each do |cat| %>
+    <a href="javascript:void(0)" class="option">
+      <%= cat_image_tag cat %>
+      <div class="arrow-up"></div>
+    </a>
+  <% end %>
 </div>
