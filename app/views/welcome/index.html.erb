@@ -1,3 +1,5 @@
+<h1>The Greatest Cat Picture on the Internet</h1>
+
 <div class="options">
   <% @cats.each do |cat| %>
     <a href="javascript:void(0)" class="option">
@@ -7,8 +9,14 @@
   <% end %>
 </div>
 
+<div class="nominate">
+  <h2>Think you know the greatest cat picture?</h2>
+  <input type="text" placeholder="URL"><button type="submit">Nominate it!</button>
+</div>
+
 <div class="tabs">
 	<ul class="tab-links">
+    <h3>Top by:</h3>
 		<li class="active"><a href="#tab1">Week</a></li>
 		<li><a href="#tab2">Month</a></li>
 		<li><a href="#tab3">All Time</a></li>

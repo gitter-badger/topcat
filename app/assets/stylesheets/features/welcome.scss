@@ -1,3 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  width: $main-width;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 50px;
+}
+
 .arrow-up {
   border-bottom: 15px solid #999;
   border-left: 15px solid transparent;
@@ -9,13 +22,13 @@
 
 .options {
   margin: 0 auto;
-  min-height: 518px;
+  min-height: 525px;
   width: $main-width;
 }
 
 .option {
   background: #eee;
-  margin: 0px 0;
+  margin: 0;
   padding: 10px;
   width: 478px;
 
@@ -30,7 +43,6 @@
 
   &:first-child {
     $direction: left;
-
     float: $direction;
     @include cat-option-border($direction);
     @include cat-option-shadow($direction);
@@ -45,6 +57,33 @@
     border-left: 0;
     padding-left: 11px;
   }
+}
+
+.nominate {
+  width: $main-width;
+  margin: 60px auto;
+  text-align: center;
+    input {
+      height: 30px;
+      width: 500px;
+      font-size: 16px;
+    }
+    button {
+      border: 0;
+      height: 36px;
+      width: 120px;
+      margin: 0 0 0 20px;
+      background-color: #999;
+      color: #fff;
+      font-size: 16px;
+      display: inline-block;
+      vertical-align: top;
+    }
+}
+
+
+.tabs {
+  margin: 60px auto;
 }
 
 .tab {
@@ -71,9 +110,13 @@
 
 .tab-links {
   width: $main-width;
-  margin: 60px auto 0 auto;
+  margin: 0 auto;
   border-bottom: 2px solid #999;
   padding: 0;
+    h3 {
+      display: inline;
+      padding: 0 20px;
+    }
     li {
       list-style: none;
       display: inline-block;
@@ -85,11 +128,10 @@
       color: white;
       text-decoration: none;
       padding: 7px 30px 5px 30px;
-      font-family: arial;
     }
-    li:first-child {
-      margin-left: 50px;
-    }
+    // li:first-child {
+    //   margin-left: 50px;
+    // }
     .active {
       background: #999;
     }
