@@ -27,8 +27,8 @@
     width: 475px;
   }
 
-  &:active { background: #ddd; }
-  &:hover { background: #eaeaea; }
+  &:active { background: #eaeaea; }
+  &:hover { background: #eee; }
 
   &:first-child {
     $direction: left;
