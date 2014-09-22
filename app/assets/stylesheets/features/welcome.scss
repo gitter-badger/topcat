@@ -61,6 +61,11 @@
   width: $main-width;
   margin: 60px auto 0 auto;
   border-bottom: 2px solid #999;
+  padding: 0;
+    li {
+      list-style: none;
+      display: inline;
+    }
     a {
       display: inline-block;
       background: #ccc;
@@ -68,9 +73,12 @@
       text-decoration: none;
       padding: 7px 30px 5px 30px;
       font-family: arial;
+      border-radius: 3px 3px 0 0;
     }
-    a:first-child {
-      background: #999;
+    li:first-child {
       margin-left: 50px;
+    }
+    .active {
+      background: #999;
     }
 }
