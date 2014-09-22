@@ -50,6 +50,7 @@
 .tab {
   width: $main-width;
   margin: auto;
+  display: none;
     img {
       border: 1px solid #999;
       margin: 10px 20px 10px 0;
@@ -62,6 +63,10 @@
       img:nth-child(5n+5) {
         margin-right: 0;
       }
+}
+
+.tab.active {
+  display: block;
 }
 
 .tab-links {
