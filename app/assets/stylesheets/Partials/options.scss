@@ -14,7 +14,7 @@
 }
 
 .option {
-  background: #eee;
+  background: $option-background;
   margin: 0;
   padding: 10px;
   width: 478px;
@@ -25,14 +25,14 @@
     width: 475px;
   }
 
-  &:active { background: #eaeaea; }
-  &:hover { background: #eee; }
+  &:active { background: $option-background-active; }
+  &:hover { background: $option-background-hover; }
 
   &:first-child {
     $direction: left;
     float: $direction;
     @include cat-option-border($direction);
-    @include cat-option-shadow($direction);
+    // @include cat-option-shadow($direction);
   }
 
   &:last-child {
@@ -40,7 +40,7 @@
 
     float: $direction;
     @include cat-option-border($direction);
-    @include cat-option-shadow($direction);
+    // @include cat-option-shadow($direction);
     border-left: 0;
     padding-left: 11px;
   }

@@ -1,5 +1,6 @@
 .tabs {
-  margin: 60px auto;
+  margin: 30px auto;
+  height: 444px;
 }
 
 .tab {
@@ -35,7 +36,7 @@
     }
     li {
       background: $secondary-color;
-      border-radius: 3px 3px 0 0;
+      border-radius: $border-radius $border-radius 0 0;
       display: inline-block;
       list-style: none;
     }

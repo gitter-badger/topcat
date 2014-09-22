@@ -1,8 +1,7 @@
 $main-padding: 15px;
 $main-width: 1000px;
 
-$option-gradient-color: #f8f8f8;
-$option-gradient-color-hover: #ddd;
+$border-radius: 3px;
 
 // Colors
 
@@ -13,3 +12,7 @@ $highlight-color: #333;
 $background-color: #fafafa;
 $main-font-color: #333;
 $secondary-font-color: #fff;
+
+$option-background: #eee;
+$option-background-hover: #e6e6e6;
+$option-background-active: #ccc;
