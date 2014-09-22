@@ -1,138 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import 'partials/options';
+@import 'partials/nominate';
+@import 'partials/results_grid';
 
 body {
+  background-color: $background-color;
+  color: $main-font-color;
   font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-  width: $main-width;
+  color: $highlight-color;
+  font-size: 50px;
   margin: 20px auto;
   text-align: center;
-  font-size: 50px;
-}
-
-.arrow-up {
-  border-bottom: 15px solid #999;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  height: 0;
-  margin: 6px auto 0 auto;
-  width: 0;
-}
-
-.options {
-  margin: 0 auto;
-  min-height: 525px;
   width: $main-width;
-}
-
-.option {
-  background: #eee;
-  margin: 0;
-  padding: 10px;
-  width: 478px;
-
-  img {
-    border: 1px ridge $option-border-color;
-    height: 475px;
-    width: 475px;
-  }
-
-  &:active { background: #eaeaea; }
-  &:hover { background: #eee; }
-
-  &:first-child {
-    $direction: left;
-    float: $direction;
-    @include cat-option-border($direction);
-    @include cat-option-shadow($direction);
-  }
-
-  &:last-child {
-    $direction: right;
-
-    float: $direction;
-    @include cat-option-border($direction);
-    @include cat-option-shadow($direction);
-    border-left: 0;
-    padding-left: 11px;
-  }
-}
-
-.nominate {
-  width: $main-width;
-  margin: 60px auto;
-  text-align: center;
-    input {
-      height: 30px;
-      width: 500px;
-      font-size: 16px;
-    }
-    button {
-      border: 0;
-      height: 36px;
-      width: 120px;
-      margin: 0 0 0 20px;
-      background-color: #999;
-      color: #fff;
-      font-size: 16px;
-      display: inline-block;
-      vertical-align: top;
-    }
-}
-
-
-.tabs {
-  margin: 60px auto;
-}
-
-.tab {
-  width: $main-width;
-  margin: auto;
-  display: none;
-    img {
-      border: 1px solid #999;
-      margin: 10px 20px 10px 0;
-      width: 182px;
-      height: 182px;
-      display:inline;
-      float: left;
-      position: relative;
-    }
-      img:nth-child(5n+5) {
-        margin-right: 0;
-      }
-}
-
-.tab.active {
-  display: block;
-}
-
-.tab-links {
-  width: $main-width;
-  margin: 0 auto;
-  border-bottom: 2px solid #999;
-  padding: 0;
-    h3 {
-      display: inline;
-      padding: 0 20px;
-    }
-    li {
-      list-style: none;
-      display: inline-block;
-      background: #ccc;
-      border-radius: 3px 3px 0 0;
-    }
-    a {
-      display: inline-block;
-      color: white;
-      text-decoration: none;
-      padding: 7px 30px 5px 30px;
-    }
-    // li:first-child {
-    //   margin-left: 50px;
-    // }
-    .active {
-      background: #999;
-    }
 }

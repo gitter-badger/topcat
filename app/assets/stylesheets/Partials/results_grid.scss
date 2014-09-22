@@ -1,0 +1,51 @@
+.tabs {
+  margin: 60px auto;
+}
+
+.tab {
+  display: none;
+  margin: auto;
+  width: $main-width;
+    img {
+      border: 1px solid $primary-color;
+      display:inline;
+      float: left;
+      height: 182px;
+      margin: 10px 20px 10px 0;
+      position: relative;
+      width: 182px;
+    }
+      img:nth-child(5n+5) {
+        margin-right: 0;
+      }
+}
+
+.tab.active {
+  display: block;
+}
+
+.tab-links {
+  border-bottom: 2px solid $primary-color;
+  margin: 0 auto;
+  padding: 0;
+  width: $main-width;
+    h3 {
+      display: inline;
+      padding: 0 20px;
+    }
+    li {
+      background: $secondary-color;
+      border-radius: 3px 3px 0 0;
+      display: inline-block;
+      list-style: none;
+    }
+    a {
+      display: inline-block;
+      color: $secondary-font-color;
+      padding: 7px 30px 5px 30px;
+      text-decoration: none;
+    }
+    .active {
+      background: $primary-color;
+    }
+}
