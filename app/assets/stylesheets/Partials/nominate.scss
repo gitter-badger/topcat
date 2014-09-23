@@ -11,15 +11,28 @@
       font-size: 16px;
       height: 36px;
       margin: 0 0 0 20px;
+      padding: 2px 30px 3px 30px;
+      transition: background-color 0.3s;
       vertical-align: top;
-      width: 120px;
       &:hover {
         background-color: $secondary-color;
       }
     }
-    input {
+    input[type="text"] {
+      appearance: none;
+      border: none;
+      border-bottom: 2px solid $secondary-color;
+      border-radius: none;
+      box-shadow: none;
+      // display: block;
       font-size: 16px;
-      height: 30px;
+      margin: 0;
+      padding: 8px 10px;
+      transition: border 0.3s;
       width: 500px;
+    }
+    input[type="text"]:focus {
+      border-bottom: 2px solid $primary-color;
+      outline: none;
     }
 }

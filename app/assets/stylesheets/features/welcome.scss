@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Oswald);
 @import 'lightbox';
 @import 'partials/options';
 @import 'partials/nominate';
@@ -12,7 +12,8 @@ body {
 
 h1 {
   color: $highlight-color;
-  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
   margin: 20px auto;
   text-align: center;
   width: $main-width;
