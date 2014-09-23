@@ -9,10 +9,10 @@ $primary-color: #999;
 $secondary-color: #ccc;
 $highlight-color: #333;
 
-$background-color: #fafafa;
+$background-color: #fff;
 $main-font-color: #333;
 $secondary-font-color: #fff;
 
 $option-background: #eee;
-$option-background-hover: #e6e6e6;
-$option-background-active: #ccc;
+$option-background-hover: darken($option-background, 3%);
+$option-background-active: darken($option-background, 10%);

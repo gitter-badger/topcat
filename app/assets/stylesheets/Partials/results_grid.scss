@@ -16,9 +16,9 @@
       position: relative;
       width: 182px;
     }
-      img:nth-child(5n+5) {
-        margin-right: 0;
-      }
+    a:nth-child(5n+5) img {
+      margin-right: 0;
+    }
 }
 
 .tab.active {
@@ -39,6 +39,9 @@
       border-radius: $border-radius $border-radius 0 0;
       display: inline-block;
       list-style: none;
+      &:hover {
+        background-color: $primary-color;
+      }
     }
     a {
       display: inline-block;
